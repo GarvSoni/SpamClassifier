@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Spam Classifier</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/static/styles.css'>
+    <!-- <script src='main.js'></script> -->
+    <link rel= "shortcut icon" type = "image/x-icon" href = '/static/logotab.icon'/>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body>
+
+	<header>
+		<!-- <div class="container">
+		<div id="brandname">
+			Welcome to my app
+		</div>
+
+		<h2>E-mail classifier</h2>
+		
+	</div> -->
+
+	<div class="row">
+		<div class= 'logo'>
+			<img src="/static/logolesssize.jpg">
+		</div>
+		<ul class = "main-nav">
+			<li class= "active"><a href = ""> Home </a></li>
+			<li><a href = ""> Servies </a></li>
+			<li><a href = ""> About </a></li>
+			<!-- <li><a href = ""> Contact </a></li> -->
+			<!-- <li><a href = ""> FAQ </a></li> -->
+
+		</ul>
+	</div>
+	</header>
+	<p style="color: #f4511e;font-size: 20px;text-align: center;"><b>Result</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<!-- <h2 style="color:red;">Spam</h2> -->
+	<p style="color: #f4511e;font-size:20px;text-align: center;"><b>It's a SPAM.</b></p>
+	{% elif prediction == 0%}
+	<!-- <h2 style="color:blue;">Not a Spam (It is a Ham)</h2> -->
+	<p style="color: #f4511e;font-size:20px;text-align: center;"><b>Not a SPAM (It is a HAM).</b></p>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>

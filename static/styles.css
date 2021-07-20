@@ -1,0 +1,155 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+
+	background-image: url('background0.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+}
+
+.main-nav
+{
+    float : right;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.main-nav li 
+{
+    display: inline-block
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a
+{
+    border-radius: 20px;
+    border: 3px solid rgb(244, 81, 30);
+}
+
+.main-nav li a:hover
+{
+    border-radius: 20px;
+    border: 1px solid  rgb(244, 81, 30);
+    ;
+}
+
+.row
+{
+    max-width: 1800px;
+    margin:auto;
+}
+
+.logo img
+{   
+	
+	margin-top :-30px;
+    margin-left:0px;
+    width: 100px;
+    height: auto;
+    float : left;
+}
+
+
+
+header{
+	background:transparent;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+
+}
+
+
+.ml-container{
+	
+	position: absolute;
+	top:39%;
+	width:90%;
+	text-align: center;
+
+}
+
+
+textarea {
+	width: 50%;
+	height: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #f4511e;
+	border-radius: 5px;
+	background-color: transparent;
+	font-size: 16px;
+	resize: none;
+	/* vertical-align: 50%; */
+  }
+
+.btn-info {
+	
+		display: inline-block;
+		border-radius: 4px;
+		background-color: #f4511e;
+		border: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 28px;
+		padding: 20px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+		border-radius:20px;
+		
+	}
+
+#container
+{
+    text-align: center;
+}
+
+.btn-info {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.btn-info:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-info:hover {
+    padding-right: 25px;
+  }
+.btn-info:hover:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+.resultss{
+	border-radius: 15px 50px;
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+
+	background-image: url('background0.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+}
+
+
